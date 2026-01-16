@@ -2,7 +2,7 @@
 import os
 
 # ModelScope API配置
-MODELSCOPE_API_KEY = os.getenv("MODELSCOPE_API_KEY", "<MODELSCOPE_TOKEN>")
+MODELSCOPE_API_KEY = os.getenv("MODELSCOPE_API_KEY", "ms-ad0c3667-9cba-47fc-bead-c5d1ccd5437e")
 MODELSCOPE_BASE_URL = "https://api-inference.modelscope.cn/v1"
 
 # 模型配置
