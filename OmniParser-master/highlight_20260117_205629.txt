@@ -1,0 +1,376 @@
+=== 高亮信息 ===
+
+当前步骤：
+{
+  "step": 1,
+  "action": "切换应用",
+  "target": "任务栏",
+  "detail": "点击任务栏上的Microsoft Edge图标，打开浏览器",
+  "expected_result": "Microsoft Edge浏览器窗口打开并成为前台应用",
+  "confidence": 0.95
+}
+
+选择的图标ID：204
+
+图标信息：
+{
+  "type": "icon",
+  "bbox": [
+    0.28651097416877747,
+    0.9605178833007812,
+    0.308950811624527,
+    0.9930047392845154
+  ],
+  "interactivity": true,
+  "content": "A web browser logo.",
+  "source": "box_yolo_content_yolo"
+}
+
+坐标（bbox）：[0.28651097416877747, 0.9605178833007812, 0.308950811624527, 0.9930047392845154]
+
+描述：任务栏上的Microsoft Edge浏览器图标
+
+完整解析结果：
+icon 0: {'type': 'text', 'bbox': [0.02500000037252903, 0.009999999776482582, 0.040312498807907104, 0.02449999935925007], 'interactivity': False, 'content': 'File', 'source': 'box_ocr_content_ocr'}
+icon 1: {'type': 'text', 'bbox': [0.04781249910593033, 0.009999999776482582, 0.06468749791383743, 0.02449999935925007], 'interactivity': False, 'content': 'Edit', 'source': 'box_ocr_content_ocr'}
+icon 2: {'type': 'text', 'bbox': [0.07124999910593033, 0.009999999776482582, 0.10687500238418579, 0.02449999935925007], 'interactivity': False, 'content': 'Selection', 'source': 'box_ocr_content_ocr'}
+icon 3: {'type': 'text', 'bbox': [0.11406250298023224, 0.009999999776482582, 0.13343749940395355, 0.02449999935925007], 'interactivity': False, 'content': 'View', 'source': 'box_ocr_content_ocr'}
+icon 4: {'type': 'text', 'bbox': [0.14156250655651093, 0.009999999776482582, 0.1537500023841858, 0.02449999935925007], 'interactivity': False, 'content': 'Go', 'source': 'box_ocr_content_ocr'}
+icon 5: {'type': 'text', 'bbox': [0.16187499463558197, 0.009999999776482582, 0.17781250178813934, 0.02449999935925007], 'interactivity': False, 'content': 'Run', 'source': 'box_ocr_content_ocr'}
+icon 6: {'type': 'text', 'bbox': [0.18531249463558197, 0.009999999776482582, 0.21843749284744263, 0.02449999935925007], 'interactivity': False, 'content': 'Terminal', 'source': 'box_ocr_content_ocr'}
+icon 7: {'type': 'text', 'bbox': [0.22593750059604645, 0.009999999776482582, 0.24500000476837158, 0.026000000536441803], 'interactivity': False, 'content': 'Help', 'source': 'box_ocr_content_ocr'}
+icon 8: {'type': 'text', 'bbox': [0.49781250953674316, 0.010999999940395355, 0.5321875214576721, 0.027499999850988388], 'interactivity': False, 'content': 'star_gent', 'source': 'box_ocr_content_ocr'}
+icon 9: {'type': 'text', 'bbox': [0.04156250134110451, 0.04500000178813934, 0.07468750327825546, 0.05950000137090683], 'interactivity': False, 'content': 'EXPLORER', 'source': 'box_ocr_content_ocr'}
+icon 10: {'type': 'text', 'bbox': [0.22968749701976776, 0.04650000110268593, 0.26374998688697815, 0.05950000137090683], 'interactivity': False, 'content': 'executor', 'source': 'box_ocr_content_ocr'}
+icon 11: {'type': 'text', 'bbox': [0.26343750953674316, 0.0430000014603138, 0.29593750834465027, 0.06499999761581421], 'interactivity': False, 'content': 'main py', 'source': 'box_ocr_content_ocr'}
+icon 12: {'type': 'text', 'bbox': [0.6912500262260437, 0.041999999433755875, 0.7400000095367432, 0.06400000303983688], 'interactivity': False, 'content': 'X & @', 'source': 'box_ocr_content_ocr'}
+icon 13: {'type': 'text', 'bbox': [0.7803124785423279, 0.04500000178813934, 0.8662499785423279, 0.061500001698732376], 'interactivity': False, 'content': 'Traceback (most recent', 'source': 'box_ocr_content_ocr'}
+icon 14: {'type': 'text', 'bbox': [0.1443749964237213, 0.07349999994039536, 0.19312499463558197, 0.09149999916553497], 'interactivity': False, 'content': 'task_planner', 'source': 'box_ocr_content_ocr'}
+icon 15: {'type': 'text', 'bbox': [0.2134374976158142, 0.07500000298023224, 0.2475000023841858, 0.0885000005364418], 'interactivity': False, 'content': 'executor', 'source': 'box_ocr_content_ocr'}
+icon 16: {'type': 'text', 'bbox': [0.24687500298023224, 0.07150000333786011, 0.27937498688697815, 0.0925000011920929], 'interactivity': False, 'content': 'mainpy', 'source': 'box_ocr_content_ocr'}
+icon 17: {'type': 'text', 'bbox': [0.2984375059604645, 0.07400000095367432, 0.3178125023841858, 0.0885000005364418], 'interactivity': False, 'content': 'main', 'source': 'box_ocr_content_ocr'}
+icon 18: {'type': 'text', 'bbox': [0.7718750238418579, 0.08100000023841858, 0.9240624904632568, 0.09700000286102295], 'interactivity': False, 'content': 'Traceback (most recent call last): File "D:', 'source': 'box_ocr_content_ocr'}
+icon 19: {'type': 'text', 'bbox': [0.17749999463558197, 0.09399999678134918, 0.21843749284744263, 0.10849999636411667], 'interactivity': False, 'content': 'def main', 'source': 'box_ocr_content_ocr'}
+icon 20: {'type': 'text', 'bbox': [0.7915624976158142, 0.11749999970197678, 0.8021875023841858, 0.13099999725818634], 'interactivity': False, 'content': 'Py', 'source': 'box_ocr_content_ocr'}
+icon 21: {'type': 'text', 'bbox': [0.15156249701976776, 0.1264999955892563, 0.16312499344348907, 0.14100000262260437], 'interactivity': False, 'content': '65', 'source': 'box_ocr_content_ocr'}
+icon 22: {'type': 'text', 'bbox': [0.21656249463558197, 0.125, 0.2475000023841858, 0.14100000262260437], 'interactivity': False, 'content': 'choice', 'source': 'box_ocr_content_ocr'}
+icon 23: {'type': 'text', 'bbox': [0.25843751430511475, 0.12150000035762787, 0.3996874988079071, 0.1469999998807907], 'interactivity': False, 'content': 'input("jt4 (1-5)[]") stripo)', 'source': 'box_ocr_content_ocr'}
+icon 24: {'type': 'text', 'bbox': [0.792187511920929, 0.1340000033378601, 0.8215625286102295, 0.148499995470047], 'interactivity': False, 'content': 'Modified', 'source': 'box_ocr_content_ocr'}
+icon 25: {'type': 'text', 'bbox': [0.05249999836087227, 0.14000000059604645, 0.11312499642372131, 0.15449999272823334], 'interactivity': False, 'content': 'f1862561-f260_.', 'source': 'box_ocr_content_ocr'}
+icon 26: {'type': 'text', 'bbox': [0.2306250035762787, 0.164000004529953, 0.2615624964237213, 0.1784999966621399], 'interactivity': False, 'content': 'choice', 'source': 'box_ocr_content_ocr'}
+icon 27: {'type': 'text', 'bbox': [0.27906250953674316, 0.16249999403953552, 0.2996875047683716, 0.1784999966621399], 'interactivity': False, 'content': '"1":', 'source': 'box_ocr_content_ocr'}
+icon 28: {'type': 'text', 'bbox': [0.792187511920929, 0.17149999737739563, 0.973437488079071, 0.18799999356269836], 'interactivity': False, 'content': 'Edit d: IA_star_gent Itask_planner lexecutor_agent', 'source': 'box_ocr_content_ocr'}
+icon 29: {'type': 'text', 'bbox': [0.234375, 0.1809999942779541, 0.2668749988079071, 0.20000000298023224], 'interactivity': False, 'content': 'result', 'source': 'box_ocr_content_ocr'}
+icon 30: {'type': 'text', 'bbox': [0.27812498807907104, 0.18250000476837158, 0.42781248688697815, 0.19850000739097595], 'interactivity': False, 'content': 'executor.handle_feedback("next"', 'source': 'box_ocr_content_ocr'}
+icon 31: {'type': 'text', 'bbox': [0.7915624976158142, 0.19499999284744263, 0.8021875023841858, 0.2084999978542328], 'interactivity': False, 'content': 'Py', 'source': 'box_ocr_content_ocr'}
+icon 32: {'type': 'text', 'bbox': [0.04749999940395355, 0.20600000023841858, 0.109375, 0.2240000069141388], 'interactivity': False, 'content': 'knowledge_base', 'source': 'box_ocr_content_ocr'}
+icon 33: {'type': 'text', 'bbox': [0.23499999940395355, 0.20100000500679016, 0.31968748569488525, 0.21899999678134918], 'interactivity': False, 'content': "if result[ 'status", 'source': 'box_ocr_content_ocr'}
+icon 34: {'type': 'text', 'bbox': [0.3503125011920929, 0.19949999451637268, 0.39781248569488525, 0.2199999988079071], 'interactivity': False, 'content': 'completed =', 'source': 'box_ocr_content_ocr'}
+icon 35: {'type': 'text', 'bbox': [0.792187511920929, 0.21250000596046448, 0.8146874904632568, 0.22599999606609344], 'interactivity': False, 'content': 'Added', 'source': 'box_ocr_content_ocr'}
+icon 36: {'type': 'text', 'bbox': [0.823437511920929, 0.21250000596046448, 0.8396875262260437, 0.22599999606609344], 'interactivity': False, 'content': 'lines', 'source': 'box_ocr_content_ocr'}
+icon 37: {'type': 'text', 'bbox': [0.047187499701976776, 0.22599999606609344, 0.10968749970197678, 0.24549999833106995], 'interactivity': False, 'content': 'OmniParser-mas.', 'source': 'box_ocr_content_ocr'}
+icon 38: {'type': 'text', 'bbox': [0.2540625035762787, 0.21649999916553497, 0.3543750047683716, 0.24199999868869781], 'interactivity': False, 'content': 'print("InfEszszbf]")', 'source': 'box_ocr_content_ocr'}
+icon 39: {'type': 'text', 'bbox': [0.25468748807907104, 0.23999999463558197, 0.2809374928474426, 0.25450000166893005], 'interactivity': False, 'content': 'break', 'source': 'box_ocr_content_ocr'}
+icon 40: {'type': 'text', 'bbox': [0.05218749865889549, 0.2485000044107437, 0.09187500178813934, 0.2694999873638153], 'interactivity': False, 'content': '_pycache', 'source': 'box_ocr_content_ocr'}
+icon 41: {'type': 'text', 'bbox': [0.21562500298023224, 0.2574999928474426, 0.2709375023841858, 0.273499995470047], 'interactivity': False, 'content': 'elif choice', 'source': 'box_ocr_content_ocr'}
+icon 42: {'type': 'text', 'bbox': [0.2890625, 0.2590000033378601, 0.3084374964237213, 0.273499995470047], 'interactivity': False, 'content': '"2" :', 'source': 'box_ocr_content_ocr'}
+icon 43: {'type': 'text', 'bbox': [0.7918750047683716, 0.24449999630451202, 0.965624988079071, 0.26649999618530273], 'interactivity': False, 'content': '#EIzTh 7 {RiZi320j1azo Iter#71', 'source': 'box_ocr_content_ocr'}
+icon 44: {'type': 'text', 'bbox': [0.05249999836087227, 0.27250000834465027, 0.0715624988079071, 0.28700000047683716], 'interactivity': False, 'content': 'docs', 'source': 'box_ocr_content_ocr'}
+icon 45: {'type': 'text', 'bbox': [0.824999988079071, 0.26600000262260437, 0.965624988079071, 0.2874999940395355], 'interactivity': False, 'content': 'main py WhI WiLHA@ESR', 'source': 'box_ocr_content_ocr'}
+icon 46: {'type': 'text', 'bbox': [0.234375, 0.2759999930858612, 0.2668749988079071, 0.29499998688697815], 'interactivity': False, 'content': 'result', 'source': 'box_ocr_content_ocr'}
+icon 47: {'type': 'text', 'bbox': [0.2784374952316284, 0.2759999930858612, 0.43062499165534973, 0.2944999933242798], 'interactivity': False, 'content': 'executor.handle_feedback("error', 'source': 'box_ocr_content_ocr'}
+icon 48: {'type': 'text', 'bbox': [0.05249999836087227, 0.2939999997615814, 0.06937500089406967, 0.3084999918937683], 'interactivity': False, 'content': 'eval', 'source': 'box_ocr_content_ocr'}
+icon 49: {'type': 'text', 'bbox': [0.15062500536441803, 0.2759999930858612, 0.16562500596046448, 0.3345000147819519], 'interactivity': False, 'content': '78', 'source': 'box_ocr_content_ocr'}
+icon 50: {'type': 'text', 'bbox': [0.23499999940395355, 0.2944999933242798, 0.4046874940395355, 0.3165000081062317], 'interactivity': False, 'content': 'print(f"InEa#mw  tt{len(result[', 'source': 'box_ocr_content_ocr'}
+icon 51: {'type': 'text', 'bbox': [0.40687501430511475, 0.29350000619888306, 0.5299999713897705, 0.3160000145435333], 'interactivity': False, 'content': 'new_plan\' ][ \' steps\' 1)}#")', 'source': 'box_ocr_content_ocr'}
+icon 52: {'type': 'text', 'bbox': [0.05156249925494194, 0.3154999911785126, 0.07312499731779099, 0.3345000147819519], 'interactivity': False, 'content': 'imgs', 'source': 'box_ocr_content_ocr'}
+icon 53: {'type': 'text', 'bbox': [0.2150000035762787, 0.31349998712539673, 0.27125000953674316, 0.33149999380111694], 'interactivity': False, 'content': 'elif choice', 'source': 'box_ocr_content_ocr'}
+icon 54: {'type': 'text', 'bbox': [0.2890625, 0.3149999976158142, 0.3084374964237213, 0.3310000002384186], 'interactivity': False, 'content': '"3" :', 'source': 'box_ocr_content_ocr'}
+icon 55: {'type': 'text', 'bbox': [0.7918750047683716, 0.3244999945163727, 0.9775000214576721, 0.3425000011920929], 'interactivity': False, 'content': 'Edit d: IA_star_gentItask_planner lexecutor_main.p', 'source': 'box_ocr_content_ocr'}
+icon 56: {'type': 'text', 'bbox': [0.05249999836087227, 0.33899998664855957, 0.08812499791383743, 0.35199999809265137], 'interactivity': False, 'content': 'omnitool', 'source': 'box_ocr_content_ocr'}
+icon 57: {'type': 'text', 'bbox': [0.23468750715255737, 0.33250001072883606, 0.2759374976158142, 0.351500004529953], 'interactivity': False, 'content': 'question', 'source': 'box_ocr_content_ocr'}
+icon 58: {'type': 'text', 'bbox': [0.28812500834465027, 0.3319999873638153, 0.38999998569488525, 0.35249999165534973], 'interactivity': False, 'content': 'input( "TTMA RAJin]Ev:', 'source': 'box_ocr_content_ocr'}
+icon 59: {'type': 'text', 'bbox': [0.1521874964237213, 0.3334999978542328, 0.16500000655651093, 0.3725000023841858], 'interactivity': False, 'content': '76', 'source': 'box_ocr_content_ocr'}
+icon 60: {'type': 'text', 'bbox': [0.23531250655651093, 0.3540000021457672, 0.26625001430511475, 0.3684999942779541], 'interactivity': False, 'content': 'result', 'source': 'box_ocr_content_ocr'}
+icon 61: {'type': 'text', 'bbox': [0.27906250953674316, 0.3540000021457672, 0.39656248688697815, 0.3684999942779541], 'interactivity': False, 'content': 'executor.handle_feedback', 'source': 'box_ocr_content_ocr'}
+icon 62: {'type': 'text', 'bbox': [0.40406250953674316, 0.3540000021457672, 0.44968751072883606, 0.3695000112056732], 'interactivity': False, 'content': 'question" _', 'source': 'box_ocr_content_ocr'}
+icon 63: {'type': 'text', 'bbox': [0.4556249976158142, 0.35199999809265137, 0.49781250953674316, 0.3714999854564667], 'interactivity': False, 'content': 'question', 'source': 'box_ocr_content_ocr'}
+icon 64: {'type': 'text', 'bbox': [0.05249999836087227, 0.36149999499320984, 0.0793749988079071, 0.37599998712539673], 'interactivity': False, 'content': 'output', 'source': 'box_ocr_content_ocr'}
+icon 65: {'type': 'text', 'bbox': [0.7915624976158142, 0.36649999022483826, 0.8146874904632568, 0.37950000166893005], 'interactivity': False, 'content': 'Added', 'source': 'box_ocr_content_ocr'}
+icon 66: {'type': 'text', 'bbox': [0.8196874856948853, 0.36649999022483826, 0.8356249928474426, 0.37950000166893005], 'interactivity': False, 'content': 'lines', 'source': 'box_ocr_content_ocr'}
+icon 67: {'type': 'text', 'bbox': [0.23499999940395355, 0.3695000112056732, 0.31031250953674316, 0.39149999618530273], 'interactivity': False, 'content': 'print(f"In@ZE', 'source': 'box_ocr_content_ocr'}
+icon 68: {'type': 'text', 'bbox': [0.31468749046325684, 0.3720000088214874, 0.3499999940395355, 0.38999998569488525], 'interactivity': False, 'content': 'result[', 'source': 'box_ocr_content_ocr'}
+icon 69: {'type': 'text', 'bbox': [0.3528124988079071, 0.3720000088214874, 0.4000000059604645, 0.38999998569488525], 'interactivity': False, 'content': "answer' ]}'", 'source': 'box_ocr_content_ocr'}
+icon 70: {'type': 'text', 'bbox': [0.05249999836087227, 0.3824999928474426, 0.06624999642372131, 0.3959999978542328], 'interactivity': False, 'content': 'util', 'source': 'box_ocr_content_ocr'}
+icon 71: {'type': 'text', 'bbox': [0.21562500298023224, 0.39149999618530273, 0.2709375023841858, 0.40700000524520874], 'interactivity': False, 'content': 'elif choice', 'source': 'box_ocr_content_ocr'}
+icon 72: {'type': 'text', 'bbox': [0.28843748569488525, 0.39149999618530273, 0.30906251072883606, 0.4059999883174896], 'interactivity': False, 'content': '"4" :', 'source': 'box_ocr_content_ocr'}
+icon 73: {'type': 'text', 'bbox': [0.05218749865889549, 0.4034999907016754, 0.08281250298023224, 0.42149999737739563], 'interactivity': False, 'content': 'weights', 'source': 'box_ocr_content_ocr'}
+icon 74: {'type': 'text', 'bbox': [0.23468750715255737, 0.40799999237060547, 0.2815625071525574, 0.429500013589859], 'interactivity': False, 'content': 'challenge', 'source': 'box_ocr_content_ocr'}
+icon 75: {'type': 'text', 'bbox': [0.29249998927116394, 0.40849998593330383, 0.3478125035762787, 0.42899999022483826], 'interactivity': False, 'content': 'input ( "WFtm_', 'source': 'box_ocr_content_ocr'}
+icon 76: {'type': 'text', 'bbox': [0.35218751430511475, 0.40849998593330383, 0.39531248807907104, 0.42750000953674316], 'interactivity': False, 'content': 'MRpJBisz :', 'source': 'box_ocr_content_ocr'}
+icon 77: {'type': 'text', 'bbox': [0.7918750047683716, 0.4009999930858612, 0.9743750095367432, 0.41999998688697815], 'interactivity': False, 'content': '#Erz5bk  Ff leEYo ITEGMPjXRZIJaE', 'source': 'box_ocr_content_ocr'}
+icon 78: {'type': 'text', 'bbox': [0.05375000089406967, 0.4259999990463257, 0.09000000357627869, 0.4440000057220459], 'interactivity': False, 'content': 'gitignore', 'source': 'box_ocr_content_ocr'}
+icon 79: {'type': 'text', 'bbox': [0.23531250655651093, 0.4300000071525574, 0.26625001430511475, 0.44449999928474426], 'interactivity': False, 'content': 'result', 'source': 'box_ocr_content_ocr'}
+icon 80: {'type': 'text', 'bbox': [0.2787500023841858, 0.42899999022483826, 0.39656248688697815, 0.44449999928474426], 'interactivity': False, 'content': 'executor.handle feedback', 'source': 'box_ocr_content_ocr'}
+icon 81: {'type': 'text', 'bbox': [0.4034374952316284, 0.4269999861717224, 0.45406249165534973, 0.4480000138282776], 'interactivity': False, 'content': 'challenge"', 'source': 'box_ocr_content_ocr'}
+icon 82: {'type': 'text', 'bbox': [0.4609375, 0.42649999260902405, 0.5074999928474426, 0.4480000138282776], 'interactivity': False, 'content': 'challenge', 'source': 'box_ocr_content_ocr'}
+icon 83: {'type': 'text', 'bbox': [0.7918750047683716, 0.4194999933242798, 0.8399999737739563, 0.4390000104904175], 'interactivity': False, 'content': 'Aj, 3lz:', 'source': 'box_ocr_content_ocr'}
+icon 84: {'type': 'text', 'bbox': [0.23499999940395355, 0.44850000739097595, 0.31968748569488525, 0.46650001406669617], 'interactivity': False, 'content': "if result[ ' status", 'source': 'box_ocr_content_ocr'}
+icon 85: {'type': 'text', 'bbox': [0.35062500834465027, 0.44850000739097595, 0.3968749940395355, 0.46650001406669617], 'interactivity': False, 'content': 'replanned', 'source': 'box_ocr_content_ocr'}
+icon 86: {'type': 'text', 'bbox': [0.7962499856948853, 0.45500001311302185, 0.8043749928474426, 0.4684999883174896], 'interactivity': False, 'content': '1.', 'source': 'box_ocr_content_ocr'}
+icon 87: {'type': 'text', 'bbox': [0.8037499785423279, 0.4519999921321869, 0.8571875095367432, 0.4724999964237213], 'interactivity': False, 'content': 'iaj2311', 'source': 'box_ocr_content_ocr'}
+icon 88: {'type': 'text', 'bbox': [0.8600000143051147, 0.4519999921321869, 0.9750000238418579, 0.4724999964237213], 'interactivity': False, 'content': 'executor_main py.87-88 Zinin]', 'source': 'box_ocr_content_ocr'}
+icon 89: {'type': 'text', 'bbox': [0.2537499964237213, 0.46299999952316284, 0.4543749988079071, 0.4880000054836273], 'interactivity': False, 'content': 'print(f"InEE#tWE k{result[ \'explanation', 'source': 'box_ocr_content_ocr'}
+icon 90: {'type': 'text', 'bbox': [0.8043749928474426, 0.47200000286102295, 0.9125000238418579, 0.4909999966621399], 'interactivity': False, 'content': 'HAZSRIARIGBEYI#:', 'source': 'box_ocr_content_ocr'}
+icon 91: {'type': 'text', 'bbox': [0.23531250655651093, 0.48649999499320984, 0.2606250047683716, 0.5009999871253967], 'interactivity': False, 'content': 'else:', 'source': 'box_ocr_content_ocr'}
+icon 92: {'type': 'text', 'bbox': [0.8034374713897705, 0.4945000112056732, 0.9318749904632568, 0.5139999985694885], 'interactivity': False, 'content': '13731+4122 - M4mPjX1RIz ,', 'source': 'box_ocr_content_ocr'}
+icon 93: {'type': 'text', 'bbox': [0.2540625035762787, 0.5034999847412109, 0.4453125, 0.5239999890327454], 'interactivity': False, 'content': 'print(f"In#@RETIL I{result[ \'explanation', 'source': 'box_ocr_content_ocr'}
+icon 94: {'type': 'text', 'bbox': [0.21562500298023224, 0.5224999785423279, 0.27125000953674316, 0.5404999852180481], 'interactivity': False, 'content': 'elif choice', 'source': 'box_ocr_content_ocr'}
+icon 95: {'type': 'text', 'bbox': [0.28843748569488525, 0.5239999890327454, 0.30531251430511475, 0.5394999980926514], 'interactivity': False, 'content': '"5"', 'source': 'box_ocr_content_ocr'}
+icon 96: {'type': 'text', 'bbox': [0.8059375286102295, 0.5335000157356262, 0.9759374856948853, 0.5525000095367432], 'interactivity': False, 'content': 'highlight_YYYYMMDD_HHMMSS.txt Ylt, @3:', 'source': 'box_ocr_content_ocr'}
+icon 97: {'type': 'text', 'bbox': [0.23531250655651093, 0.5440000295639038, 0.2903124988079071, 0.5584999918937683], 'interactivity': False, 'content': 'save_choice', 'source': 'box_ocr_content_ocr'}
+icon 98: {'type': 'text', 'bbox': [0.30250000953674316, 0.5389999747276306, 0.5628125071525574, 0.5644999742507935], 'interactivity': False, 'content': 'input("ESRRIERIBExit? (y/n)E]") strip().lower()', 'source': 'box_ocr_content_ocr'}
+icon 99: {'type': 'text', 'bbox': [0.30781251192092896, 0.5625, 0.3621875047683716, 0.578499972820282], 'interactivity': False, 'content': 'save_choice', 'source': 'box_ocr_content_ocr'}
+icon 100: {'type': 'text', 'bbox': [0.8162500262260437, 0.5559999942779541, 0.8671875, 0.574999988079071], 'interactivity': False, 'content': '401448132', 'source': 'box_ocr_content_ocr'}
+icon 101: {'type': 'text', 'bbox': [0.23531250655651093, 0.5814999938011169, 0.26625001430511475, 0.597000002861023], 'interactivity': False, 'content': 'result', 'source': 'box_ocr_content_ocr'}
+icon 102: {'type': 'text', 'bbox': [0.2787500023841858, 0.5809999704360962, 0.4556249976158142, 0.6000000238418579], 'interactivity': False, 'content': 'executor.handle_feedback( "highlight" ,', 'source': 'box_ocr_content_ocr'}
+icon 103: {'type': 'text', 'bbox': [0.4606249928474426, 0.5809999704360962, 0.5553125143051147, 0.5989999771118164], 'interactivity': False, 'content': 'save_highlight-save_', 'source': 'box_ocr_content_ocr'}
+icon 104: {'type': 'text', 'bbox': [0.557812511920929, 0.5814999938011169, 0.5975000262260437, 0.597000002861023], 'interactivity': False, 'content': 'to_file)', 'source': 'box_ocr_content_ocr'}
+icon 105: {'type': 'text', 'bbox': [0.8153125047683716, 0.5759999752044678, 0.8681250214576721, 0.5950000286102295], 'interactivity': False, 'content': '#IZAJEIMID', 'source': 'box_ocr_content_ocr'}
+icon 106: {'type': 'text', 'bbox': [0.23499999940395355, 0.5995000004768372, 0.31968748569488525, 0.6175000071525574], 'interactivity': False, 'content': "if result[ 'status", 'source': 'box_ocr_content_ocr'}
+icon 107: {'type': 'text', 'bbox': [0.34968748688697815, 0.5995000004768372, 0.41093748807907104, 0.6175000071525574], 'interactivity': False, 'content': "'highlighted'", 'source': 'box_ocr_content_ocr'}
+icon 108: {'type': 'text', 'bbox': [0.2540625035762787, 0.6169999837875366, 0.46031248569488525, 0.6389999985694885], 'interactivity': False, 'content': 'print(f"InEzZE l{result get( \'description\'', 'source': 'box_ocr_content_ocr'}
+icon 109: {'type': 'text', 'bbox': [0.7793750166893005, 0.6154999732971191, 0.90625, 0.6334999799728394], 'interactivity': False, 'content': 'ctrl esc to focus or unfocus Claude', 'source': 'box_ocr_content_ocr'}
+icon 110: {'type': 'text', 'bbox': [0.25437501072883606, 0.6370000243186951, 0.4181250035762787, 0.656499981880188], 'interactivity': False, 'content': 'print(f" Kt: {result[ \' coordinates', 'source': 'box_ocr_content_ocr'}
+icon 111: {'type': 'text', 'bbox': [0.25437501072883606, 0.6570000052452087, 0.33281248807907104, 0.675000011920929], 'interactivity': False, 'content': 'if save_to_file:', 'source': 'box_ocr_content_ocr'}
+icon 112: {'type': 'text', 'bbox': [0.785937488079071, 0.6549999713897705, 0.8381249904632568, 0.6694999933242798], 'interactivity': False, 'content': 'Ask before edits', 'source': 'box_ocr_content_ocr'}
+icon 113: {'type': 'text', 'bbox': [0.27281248569488525, 0.6735000014305115, 0.40718749165534973, 0.6949999928474426], 'interactivity': False, 'content': 'print("RZIBERRIzIyi+")', 'source': 'box_ocr_content_ocr'}
+icon 114: {'type': 'text', 'bbox': [0.05218749865889549, 0.6894999742507935, 0.1159375011920929, 0.7080000042915344], 'interactivity': False, 'content': 'executor_agent_', 'source': 'box_ocr_content_ocr'}
+icon 115: {'type': 'text', 'bbox': [0.05249999836087227, 0.7124999761581421, 0.11468750238418579, 0.7269999980926514], 'interactivity': False, 'content': 'executor_main__.', 'source': 'box_ocr_content_ocr'}
+icon 116: {'type': 'text', 'bbox': [0.1171875, 0.7124999761581421, 0.1262499988079071, 0.7260000109672546], 'interactivity': False, 'content': 'M', 'source': 'box_ocr_content_ocr'}
+icon 117: {'type': 'text', 'bbox': [0.24781249463558197, 0.7089999914169312, 0.30375000834465027, 0.722000002861023], 'interactivity': False, 'content': 'DEBUG CONSOLE', 'source': 'box_ocr_content_ocr'}
+icon 118: {'type': 'text', 'bbox': [0.3634375035762787, 0.7074999809265137, 0.3856250047683716, 0.722000002861023], 'interactivity': False, 'content': 'PORTS', 'source': 'box_ocr_content_ocr'}
+icon 119: {'type': 'text', 'bbox': [0.1471875011920929, 0.7580000162124634, 0.20156249403953552, 0.7785000205039978], 'interactivity': False, 'content': 'Wititm:', 'source': 'box_ocr_content_ocr'}
+icon 120: {'type': 'text', 'bbox': [0.14749999344348907, 0.7760000228881836, 0.1915625035762787, 0.7940000295639038], 'interactivity': False, 'content': '1. T #', 'source': 'box_ocr_content_ocr'}
+icon 121: {'type': 'text', 'bbox': [0.05218749865889549, 0.7994999885559082, 0.11031249910593033, 0.8174999952316284], 'interactivity': False, 'content': 'show_parserpy', 'source': 'box_ocr_content_ocr'}
+icon 122: {'type': 'text', 'bbox': [0.16062499582767487, 0.7919999957084656, 0.24312500655651093, 0.8125], 'interactivity': False, 'content': '#17513 (iR#)', 'source': 'box_ocr_content_ocr'}
+icon 123: {'type': 'text', 'bbox': [0.14749999344348907, 0.809499979019165, 0.22031250596046448, 0.8299999833106995], 'interactivity': False, 'content': '3 . Xlb#tsIn]', 'source': 'box_ocr_content_ocr'}
+icon 124: {'type': 'text', 'bbox': [0.046562500298023224, 0.8209999799728394, 0.07500000298023224, 0.8389999866485596], 'interactivity': False, 'content': 'MiRm', 'source': 'box_ocr_content_ocr'}
+icon 125: {'type': 'text', 'bbox': [0.16062499582767487, 0.8270000219345093, 0.2109375, 0.8460000157356262], 'interactivity': False, 'content': 'Bilx  #', 'source': 'box_ocr_content_ocr'}
+icon 126: {'type': 'text', 'bbox': [0.16062499582767487, 0.843500018119812, 0.2109375, 0.8640000224113464], 'interactivity': False, 'content': 'AzX #', 'source': 'box_ocr_content_ocr'}
+icon 127: {'type': 'text', 'bbox': [0.14749999344348907, 0.8610000014305115, 0.21187500655651093, 0.8799999952316284], 'interactivity': False, 'content': '#t% (1-5): 5', 'source': 'box_ocr_content_ocr'}
+icon 128: {'type': 'text', 'bbox': [0.14749999344348907, 0.8769999742507935, 0.28999999165534973, 0.8974999785423279], 'interactivity': False, 'content': '2SR1A2G82x/t? (y/n):', 'source': 'box_ocr_content_ocr'}
+icon 129: {'type': 'text', 'bbox': [0.04156250134110451, 0.8914999961853027, 0.07312499731779099, 0.9045000076293945], 'interactivity': False, 'content': 'OUTLINE', 'source': 'box_ocr_content_ocr'}
+icon 130: {'type': 'text', 'bbox': [0.14749999344348907, 0.8960000276565552, 0.26656249165534973, 0.9139999747276306], 'interactivity': False, 'content': '[2026-01-17 20:51:56,939]', 'source': 'box_ocr_content_ocr'}
+icon 131: {'type': 'text', 'bbox': [0.27812498807907104, 0.8974999785423279, 0.3178125023841858, 0.9135000109672546], 'interactivity': False, 'content': 'WARNING]', 'source': 'box_ocr_content_ocr'}
+icon 132: {'type': 'text', 'bbox': [0.32093751430511475, 0.8970000147819519, 0.3843750059604645, 0.9150000214576721], 'interactivity': False, 'content': 'easyocr.py:80', 'source': 'box_ocr_content_ocr'}
+icon 133: {'type': 'text', 'bbox': [0.39531248807907104, 0.8974999785423279, 0.4543749988079071, 0.9120000004768372], 'interactivity': False, 'content': 'Neither CUDA', 'source': 'box_ocr_content_ocr'}
+icon 134: {'type': 'text', 'bbox': [0.4571875035762787, 0.8974999785423279, 0.4918749928474426, 0.9120000004768372], 'interactivity': False, 'content': 'nor MPS', 'source': 'box_ocr_content_ocr'}
+icon 135: {'type': 'text', 'bbox': [0.4946874976158142, 0.8989999890327454, 0.5106250047683716, 0.9120000004768372], 'interactivity': False, 'content': 'are', 'source': 'box_ocr_content_ocr'}
+icon 136: {'type': 'text', 'bbox': [0.5134375095367432, 0.8974999785423279, 0.5575000047683716, 0.9120000004768372], 'interactivity': False, 'content': 'available', 'source': 'box_ocr_content_ocr'}
+icon 137: {'type': 'text', 'bbox': [0.5690624713897705, 0.8949999809265137, 0.653124988079071, 0.9150000214576721], 'interactivity': False, 'content': 'defaulting to CPU _', 'source': 'box_ocr_content_ocr'}
+icon 138: {'type': 'text', 'bbox': [0.6578124761581421, 0.8974999785423279, 0.6834375262260437, 0.9120000004768372], 'interactivity': False, 'content': 'Note:', 'source': 'box_ocr_content_ocr'}
+icon 139: {'type': 'text', 'bbox': [0.6868749856948853, 0.8964999914169312, 0.7403125166893005, 0.9120000004768372], 'interactivity': False, 'content': 'This module', 'source': 'box_ocr_content_ocr'}
+icon 140: {'type': 'text', 'bbox': [0.7431250214576721, 0.8974999785423279, 0.7543749809265137, 0.9120000004768372], 'interactivity': False, 'content': 'is', 'source': 'box_ocr_content_ocr'}
+icon 141: {'type': 'text', 'bbox': [0.7806249856948853, 0.8974999785423279, 0.8340625166893005, 0.9120000004768372], 'interactivity': False, 'content': 'faster with', 'source': 'box_ocr_content_ocr'}
+icon 142: {'type': 'text', 'bbox': [0.8453124761581421, 0.8974999785423279, 0.8637499809265137, 0.9120000004768372], 'interactivity': False, 'content': 'GPU', 'source': 'box_ocr_content_ocr'}
+icon 143: {'type': 'text', 'bbox': [0.04156250134110451, 0.9125000238418579, 0.07468750327825546, 0.9269999861717224], 'interactivity': False, 'content': 'TIMELINE', 'source': 'box_ocr_content_ocr'}
+icon 144: {'type': 'text', 'bbox': [0.5953124761581421, 0.9340000152587891, 0.6474999785423279, 0.9484999775886536], 'interactivity': False, 'content': 'GrinchWumath', 'source': 'box_ocr_content_ocr'}
+icon 145: {'type': 'text', 'bbox': [0.6553124785423279, 0.9334999918937683, 0.6937500238418579, 0.9514999985694885], 'interactivity': False, 'content': 'hours ago)', 'source': 'box_ocr_content_ocr'}
+icon 146: {'type': 'text', 'bbox': [0.7009375095367432, 0.9340000152587891, 0.7365624904632568, 0.9495000243186951], 'interactivity': False, 'content': 'Ln 23, Col', 'source': 'box_ocr_content_ocr'}
+icon 147: {'type': 'text', 'bbox': [0.753125011920929, 0.9350000023841858, 0.7809374928474426, 0.9495000243186951], 'interactivity': False, 'content': 'Spaces:', 'source': 'box_ocr_content_ocr'}
+icon 148: {'type': 'text', 'bbox': [0.793749988079071, 0.9340000152587891, 0.8168749809265137, 0.9484999775886536], 'interactivity': False, 'content': 'UTF-8', 'source': 'box_ocr_content_ocr'}
+icon 149: {'type': 'text', 'bbox': [0.823437511920929, 0.9350000023841858, 0.8340625166893005, 0.9484999775886536], 'interactivity': False, 'content': 'LF', 'source': 'box_ocr_content_ocr'}
+icon 150: {'type': 'text', 'bbox': [0.854687511920929, 0.9350000023841858, 0.8809375166893005, 0.9495000243186951], 'interactivity': False, 'content': 'Python', 'source': 'box_ocr_content_ocr'}
+icon 151: {'type': 'text', 'bbox': [0.96875, 0.9599999785423279, 0.9887499809265137, 0.9745000004768372], 'interactivity': False, 'content': '20.52', 'source': 'box_ocr_content_ocr'}
+icon 152: {'type': 'text', 'bbox': [0.9524999856948853, 0.9764999747276306, 0.9887499809265137, 0.9909999966621399], 'interactivity': False, 'content': '2026/1/17', 'source': 'box_ocr_content_ocr'}
+icon 153: {'type': 'text', 'bbox': [0.05312500149011612, 0.6635000109672546, 0.08687499910593033, 0.6890000104904175], 'interactivity': False, 'content': 'config py', 'source': 'box_ocr_content_ocr'}
+icon 154: {'type': 'icon', 'bbox': [0.03890598937869072, 0.7290878295898438, 0.13497275114059448, 0.7521820068359375], 'interactivity': True, 'content': 'main-py ', 'source': 'box_yolo_content_ocr'}
+icon 155: {'type': 'icon', 'bbox': [0.03842497244477272, 0.6407477855682373, 0.13413649797439575, 0.6647135615348816], 'interactivity': True, 'content': '~pycache_ ', 'source': 'box_yolo_content_ocr'}
+icon 156: {'type': 'icon', 'bbox': [0.03501276671886444, 0.6189987659454346, 0.13439719378948212, 0.6421335935592651], 'interactivity': True, 'content': 'task_planner ', 'source': 'box_yolo_content_ocr'}
+icon 157: {'type': 'icon', 'bbox': [0.03841749578714371, 0.7510378360748291, 0.13507376611232758, 0.7749686241149902], 'interactivity': True, 'content': 'planner_agent py ', 'source': 'box_yolo_content_ocr'}
+icon 158: {'type': 'icon', 'bbox': [0.033740997314453125, 0.5962057709693909, 0.13503099977970123, 0.619629442691803], 'interactivity': True, 'content': 'SECURITYmd ', 'source': 'box_yolo_content_ocr'}
+icon 159: {'type': 'icon', 'bbox': [0.03216240555047989, 0.8609994649887085, 0.13567759096622467, 0.8859615921974182], 'interactivity': True, 'content': 'ms_deploy json ', 'source': 'box_yolo_content_ocr'}
+icon 160: {'type': 'icon', 'bbox': [0.03459800407290459, 0.1563372164964676, 0.134171724319458, 0.17991186678409576], 'interactivity': True, 'content': 'chroma sqlite3 ', 'source': 'box_yolo_content_ocr'}
+icon 161: {'type': 'icon', 'bbox': [0.033556558191776276, 0.5752431750297546, 0.13582587242126465, 0.5978179574012756], 'interactivity': True, 'content': 'requirements ', 'source': 'box_yolo_content_ocr'}
+icon 162: {'type': 'icon', 'bbox': [0.039295494556427, 0.7740374803543091, 0.1346540004014969, 0.795981764793396], 'interactivity': True, 'content': 'screen_analy_. ', 'source': 'box_yolo_content_ocr'}
+icon 163: {'type': 'icon', 'bbox': [0.03167540952563286, 0.0647960975766182, 0.13588643074035645, 0.09265396744012833], 'interactivity': True, 'content': 'A_STAR_GENT ', 'source': 'box_yolo_content_ocr'}
+icon 164: {'type': 'icon', 'bbox': [0.03551864996552467, 0.17908407747745514, 0.133884996175766, 0.20188821852207184], 'interactivity': True, 'content': 'knowledge ', 'source': 'box_yolo_content_ocr'}
+icon 165: {'type': 'icon', 'bbox': [0.9297776222229004, 0.776427686214447, 0.9791073799133301, 0.7974750399589539], 'interactivity': True, 'content': 'cmd ', 'source': 'box_yolo_content_ocr'}
+icon 166: {'type': 'icon', 'bbox': [0.03313422203063965, 0.8380889296531677, 0.1356048285961151, 0.8618016839027405], 'interactivity': True, 'content': 'highlight-png ', 'source': 'box_yolo_content_ocr'}
+icon 167: {'type': 'icon', 'bbox': [0.0338086374104023, 0.09115585684776306, 0.13597407937049866, 0.11532662808895111], 'interactivity': True, 'content': '~pycache ', 'source': 'box_yolo_content_ocr'}
+icon 168: {'type': 'icon', 'bbox': [0.033272672444581985, 0.5531325936317444, 0.13460980355739594, 0.5765374302864075], 'interactivity': True, 'content': 'READMEmd ', 'source': 'box_yolo_content_ocr'}
+icon 169: {'type': 'icon', 'bbox': [0.03437972068786621, 0.11384125798940659, 0.13558775186538696, 0.136493980884552], 'interactivity': True, 'content': 'data chroma ', 'source': 'box_yolo_content_ocr'}
+icon 170: {'type': 'icon', 'bbox': [0.14150206744670868, 0.6974955201148987, 0.20020455121994019, 0.7302876114845276], 'interactivity': True, 'content': 'PROBLEMS ', 'source': 'box_yolo_content_ocr'}
+icon 171: {'type': 'icon', 'bbox': [0.9297457933425903, 0.7537559270858765, 0.9726608991622925, 0.775489330291748], 'interactivity': True, 'content': 'cmd ', 'source': 'box_yolo_content_ocr'}
+icon 172: {'type': 'icon', 'bbox': [0.9292333126068115, 0.7300068140029907, 0.9941567778587341, 0.7537382245063782], 'interactivity': True, 'content': 'powersh_ ', 'source': 'box_yolo_content_ocr'}
+icon 173: {'type': 'icon', 'bbox': [0.03160691261291504, 0.5314359068870544, 0.13428449630737305, 0.554473340511322], 'interactivity': True, 'content': 'qwen py ', 'source': 'box_yolo_content_ocr'}
+icon 174: {'type': 'icon', 'bbox': [0.5394977331161499, 0.92832350730896, 0.5802385807037354, 0.953642725944519], 'interactivity': True, 'content': 'TRAE ', 'source': 'box_yolo_content_ocr'}
+icon 175: {'type': 'icon', 'bbox': [0.031680263578891754, 0.509059488773346, 0.1341259479522705, 0.5329165458679199], 'interactivity': True, 'content': 'LICENSE ', 'source': 'box_yolo_content_ocr'}
+icon 176: {'type': 'icon', 'bbox': [0.9298158288002014, 0.7979496717453003, 0.9828973412513733, 0.8194254636764526], 'interactivity': True, 'content': 'powersh_. ', 'source': 'box_yolo_content_ocr'}
+icon 177: {'type': 'icon', 'bbox': [0.036739327013492584, 0.4427472651004791, 0.13533438742160797, 0.4659278094768524], 'interactivity': True, 'content': 'demoipynb ', 'source': 'box_yolo_content_ocr'}
+icon 178: {'type': 'icon', 'bbox': [0.8493087887763977, 0.006044740788638592, 0.8619712591171265, 0.026731161400675774], 'interactivity': True, 'content': '08 ', 'source': 'box_yolo_content_ocr'}
+icon 179: {'type': 'icon', 'bbox': [0.034925103187561035, 0.46515554189682007, 0.13545504212379456, 0.48830556869506836], 'interactivity': True, 'content': 'gradio_demo py ', 'source': 'box_yolo_content_ocr'}
+icon 180: {'type': 'icon', 'bbox': [0.9281119704246521, 0.8194647431373596, 0.9974560737609863, 0.8421209454536438], 'interactivity': True, 'content': 'python ', 'source': 'box_yolo_content_ocr'}
+icon 181: {'type': 'icon', 'bbox': [0.05619538947939873, 0.9594781398773193, 0.07858282327651978, 0.9918920993804932], 'interactivity': True, 'content': '#13 ', 'source': 'box_yolo_content_ocr'}
+icon 182: {'type': 'icon', 'bbox': [0.03371331840753555, 0.48811981081962585, 0.1351572722196579, 0.5101504325866699], 'interactivity': True, 'content': 'input-py ', 'source': 'box_yolo_content_ocr'}
+icon 183: {'type': 'icon', 'bbox': [0.804210364818573, 0.5127828121185303, 0.902876615524292, 0.5328490734100342], 'interactivity': True, 'content': 'executor agent py:224-235 ', 'source': 'box_yolo_content_ocr'}
+icon 184: {'type': 'icon', 'bbox': [0.4452148377895355, 0.03445819392800331, 0.5438631772994995, 0.06746430695056915], 'interactivity': True, 'content': 'planner_agentpy ', 'source': 'box_yolo_content_ocr'}
+icon 185: {'type': 'icon', 'bbox': [0.14764760434627533, 0.8463537096977234, 0.15777426958084106, 0.8609494566917419], 'interactivity': True, 'content': '5 . ', 'source': 'box_yolo_content_ocr'}
+icon 186: {'type': 'icon', 'bbox': [0.7917538285255432, 0.2652985453605652, 0.8569827079772949, 0.28422293066978455], 'interactivity': True, 'content': 'executor ', 'source': 'box_yolo_content_ocr'}
+icon 187: {'type': 'icon', 'bbox': [0.2037641704082489, 0.6974040865898132, 0.24105054140090942, 0.729211688041687], 'interactivity': True, 'content': 'OUTPUT ', 'source': 'box_yolo_content_ocr'}
+icon 188: {'type': 'icon', 'bbox': [0.9074586629867554, 0.9289435744285583, 0.9814870357513428, 0.9520627856254578], 'interactivity': True, 'content': 'Python 3.14 (64-bit) ', 'source': 'box_yolo_content_ocr'}
+icon 189: {'type': 'icon', 'bbox': [0.023038355633616447, 0.9292600750923157, 0.05959959328174591, 0.9520957469940186], 'interactivity': True, 'content': 'main* ', 'source': 'box_yolo_content_ocr'}
+icon 190: {'type': 'icon', 'bbox': [0.903735339641571, 0.5126179456710815, 0.9311174154281616, 0.5323251485824585], 'interactivity': True, 'content': '401 = ', 'source': 'box_yolo_content_ocr'}
+icon 191: {'type': 'icon', 'bbox': [0.14754647016525269, 0.8287864327430725, 0.15807919204235077, 0.8443012833595276], 'interactivity': True, 'content': '4. ', 'source': 'box_yolo_content_ocr'}
+icon 192: {'type': 'icon', 'bbox': [0.15199407935142517, 0.09210751950740814, 0.1636006385087967, 0.10981761664152145], 'interactivity': True, 'content': '12 ', 'source': 'box_yolo_content_ocr'}
+icon 193: {'type': 'icon', 'bbox': [0.21581049263477325, 0.16196055710315704, 0.22849979996681213, 0.17968402802944183], 'interactivity': True, 'content': 'if ', 'source': 'box_yolo_content_ocr'}
+icon 194: {'type': 'icon', 'bbox': [0.13492664694786072, 0.0336068719625473, 0.21234163641929626, 0.0693499743938446], 'interactivity': True, 'content': 'main-py ', 'source': 'box_yolo_content_ocr'}
+icon 195: {'type': 'icon', 'bbox': [0.23510321974754333, 0.5600897073745728, 0.29478123784065247, 0.5792365074157715], 'interactivity': True, 'content': 'save_to_file ', 'source': 'box_yolo_content_ocr'}
+icon 196: {'type': 'icon', 'bbox': [0.311738520860672, 0.7014610171318054, 0.3536815941333771, 0.7273948192596436], 'interactivity': True, 'content': 'TERMINAL ', 'source': 'box_yolo_content_ocr'}
+icon 197: {'type': 'icon', 'bbox': [0.756862461566925, 0.8903369307518005, 0.7785563468933105, 0.9145538210868835], 'interactivity': True, 'content': 'much ', 'source': 'box_yolo_content_ocr'}
+icon 198: {'type': 'icon', 'bbox': [0.32185256481170654, 0.035945355892181396, 0.44161948561668396, 0.06571067869663239], 'interactivity': True, 'content': 'screen_analyzerpy 4, M ', 'source': 'box_yolo_content_ocr'}
+icon 199: {'type': 'icon', 'bbox': [0.8417648077011108, 0.6521674990653992, 0.9098041653633118, 0.6709330677986145], 'interactivity': True, 'content': 'executor_main py ', 'source': 'box_yolo_content_ocr'}
+icon 200: {'type': 'icon', 'bbox': [0.39479556679725647, 0.9579174518585205, 0.4219142496585846, 0.9992517232894897], 'interactivity': True, 'content': 'A blue cross action.', 'source': 'box_yolo_content_yolo'}
+icon 201: {'type': 'icon', 'bbox': [0.17641155421733856, 0.9596447348594666, 0.19961202144622803, 0.9954959750175476], 'interactivity': True, 'content': 'the mozilla firefox logo.', 'source': 'box_yolo_content_yolo'}
+icon 202: {'type': 'icon', 'bbox': [0.25850382447242737, 0.9603239297866821, 0.28114625811576843, 0.991763710975647], 'interactivity': True, 'content': 'A simple logo or logo.', 'source': 'box_yolo_content_yolo'}
+icon 203: {'type': 'icon', 'bbox': [0.03603826090693474, 0.9593194723129272, 0.057057224214076996, 0.9922052025794983], 'interactivity': True, 'content': 'A magnifying glass icon.', 'source': 'box_yolo_content_yolo'}
+icon 204: {'type': 'icon', 'bbox': [0.28651097416877747, 0.9605178833007812, 0.308950811624527, 0.9930047392845154], 'interactivity': True, 'content': 'A web browser logo.', 'source': 'box_yolo_content_yolo'}
+icon 205: {'type': 'icon', 'bbox': [0.856708288192749, 0.9609034657478333, 0.8754811882972717, 0.9880894422531128], 'interactivity': True, 'content': 'Refresh or restart function.', 'source': 'box_yolo_content_yolo'}
+icon 206: {'type': 'icon', 'bbox': [0.20277951657772064, 0.959094226360321, 0.2280801236629486, 0.9953985810279846], 'interactivity': True, 'content': 'A yellow folder with a blue stripe.', 'source': 'box_yolo_content_yolo'}
+icon 207: {'type': 'icon', 'bbox': [0.34192875027656555, 0.9615115523338318, 0.3632334768772125, 0.9907269477844238], 'interactivity': True, 'content': 'A simple, flat, rounded icon or logo.', 'source': 'box_yolo_content_yolo'}
+icon 208: {'type': 'icon', 'bbox': [0.2316989302635193, 0.960131049156189, 0.25378984212875366, 0.9934287667274475], 'interactivity': True, 'content': 'A shopping or shopping icon.', 'source': 'box_yolo_content_yolo'}
+icon 209: {'type': 'icon', 'bbox': [0.877210259437561, 0.9610182046890259, 0.8951568603515625, 0.9871580004692078], 'interactivity': True, 'content': 'Add or Add function.', 'source': 'box_yolo_content_yolo'}
+icon 210: {'type': 'icon', 'bbox': [0.8368094563484192, 0.9606678485870361, 0.8557144999504089, 0.9885969161987305], 'interactivity': True, 'content': 'A symbol or symbol associated with a user profile or account.', 'source': 'box_yolo_content_yolo'}
+icon 211: {'type': 'icon', 'bbox': [0.13768258690834045, 0.9594185948371887, 0.17329582571983337, 0.9935109615325928], 'interactivity': True, 'content': 'A simple icon or logo.', 'source': 'box_yolo_content_yolo'}
+icon 212: {'type': 'icon', 'bbox': [0.8976860046386719, 0.96164470911026, 0.9142376184463501, 0.9872980713844299], 'interactivity': True, 'content': 'Wi-Fi signal.', 'source': 'box_yolo_content_yolo'}
+icon 213: {'type': 'icon', 'bbox': [0.42442283034324646, 0.9606800675392151, 0.444772332906723, 0.9987051486968994], 'interactivity': True, 'content': 'messages or messaging application.', 'source': 'box_yolo_content_yolo'}
+icon 214: {'type': 'icon', 'bbox': [0.8177392482757568, 0.9623635411262512, 0.8347039818763733, 0.9877902865409851], 'interactivity': True, 'content': 'A small black marker.', 'source': 'box_yolo_content_yolo'}
+icon 215: {'type': 'icon', 'bbox': [0.9688094854354858, 0.6473727226257324, 0.9875840544700623, 0.6771061420440674], 'interactivity': True, 'content': 'A pushpin or navigation symbol.', 'source': 'box_yolo_content_yolo'}
+icon 216: {'type': 'icon', 'bbox': [0.3155668377876282, 0.9602888226509094, 0.33544203639030457, 0.9907963275909424], 'interactivity': True, 'content': 'A simple application or service.', 'source': 'box_yolo_content_yolo'}
+icon 217: {'type': 'icon', 'bbox': [0.006655046250671148, 0.9566037654876709, 0.03195469081401825, 0.9989697933197021], 'interactivity': True, 'content': 'the windows logo.', 'source': 'box_yolo_content_yolo'}
+icon 218: {'type': 'icon', 'bbox': [0.9815875887870789, 0.9280059933662415, 0.9991790652275085, 0.9515392780303955], 'interactivity': True, 'content': 'A magnet or magnet function.', 'source': 'box_yolo_content_yolo'}
+icon 219: {'type': 'icon', 'bbox': [0.9140174984931946, 0.9623274207115173, 0.9281392693519592, 0.9866724610328674], 'interactivity': True, 'content': 'A simple logitech mouse icon.', 'source': 'box_yolo_content_yolo'}
+icon 220: {'type': 'icon', 'bbox': [0.9286534786224365, 0.9618783593177795, 0.9462930560112, 0.9865051507949829], 'interactivity': True, 'content': 'A thumbs up symbol.', 'source': 'box_yolo_content_yolo'}
+icon 221: {'type': 'icon', 'bbox': [0.0032833428122103214, 0.03689784184098244, 0.028189480304718018, 0.08466998487710953], 'interactivity': True, 'content': 'A simple rectangle shape.', 'source': 'box_yolo_content_yolo'}
+icon 222: {'type': 'icon', 'bbox': [0.9803436994552612, 0.7522550821304321, 0.9957011342048645, 0.7754267454147339], 'interactivity': True, 'content': 'A triangle or caution symbol.', 'source': 'box_yolo_content_yolo'}
+icon 223: {'type': 'icon', 'bbox': [0.9806575775146484, 0.7748358845710754, 0.995837390422821, 0.7968500256538391], 'interactivity': True, 'content': 'A triangle or caution symbol.', 'source': 'box_yolo_content_yolo'}
+icon 224: {'type': 'icon', 'bbox': [0.3689681887626648, 0.9600263833999634, 0.3898146450519562, 0.9954328536987305], 'interactivity': True, 'content': 'cat', 'source': 'box_yolo_content_yolo'}
+icon 225: {'type': 'icon', 'bbox': [0.8972751498222351, 0.006238036323338747, 0.9114990234375, 0.02553030475974083], 'interactivity': True, 'content': 'A rectangle shape with a slight angle.', 'source': 'box_yolo_content_yolo'}
+icon 226: {'type': 'icon', 'bbox': [0.8653848171234131, 0.005974802654236555, 0.878275454044342, 0.025601662695407867], 'interactivity': True, 'content': 'A rectangle shape with a slight angle.', 'source': 'box_yolo_content_yolo'}
+icon 227: {'type': 'icon', 'bbox': [0.8818654417991638, 0.0062339091673493385, 0.8946664333343506, 0.025694692507386208], 'interactivity': True, 'content': 'square or rectangle shape.', 'source': 'box_yolo_content_yolo'}
+icon 228: {'type': 'icon', 'bbox': [0.002721313154324889, 0.08780704438686371, 0.027281567454338074, 0.1275428831577301], 'interactivity': True, 'content': 'A magnifying glass or search function.', 'source': 'box_yolo_content_yolo'}
+icon 229: {'type': 'icon', 'bbox': [0.004491138271987438, 0.8854771256446838, 0.02457726188004017, 0.9252854585647583], 'interactivity': True, 'content': 'A simple simple design or feature.', 'source': 'box_yolo_content_yolo'}
+icon 230: {'type': 'icon', 'bbox': [0.6967059373855591, 0.0010346556082367897, 0.7229161262512207, 0.030102858319878578], 'interactivity': True, 'content': 'A checkmark indicating a positive or negative action.', 'source': 'box_yolo_content_yolo'}
+icon 231: {'type': 'icon', 'bbox': [0.07924672216176987, 0.9298547506332397, 0.09207019209861755, 0.950995922088623], 'interactivity': True, 'content': 'A blurred or crossed or horizontal symbol.', 'source': 'box_yolo_content_yolo'}
+icon 232: {'type': 'icon', 'bbox': [0.0038168251048773527, 0.8361210227012634, 0.02591055817902088, 0.8829115033149719], 'interactivity': True, 'content': 'A simple logitech logo.', 'source': 'box_yolo_content_yolo'}
+icon 233: {'type': 'icon', 'bbox': [0.740370512008667, 0.040877215564250946, 0.7543038129806519, 0.0632825717329979], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 234: {'type': 'icon', 'bbox': [0.05922839790582657, 0.9294832944869995, 0.07182037830352783, 0.9520913362503052], 'interactivity': True, 'content': 'Refresh or refresh.', 'source': 'box_yolo_content_yolo'}
+icon 235: {'type': 'icon', 'bbox': [0.6830409169197083, 0.08927246183156967, 0.7345570921897888, 0.19217097759246826], 'interactivity': True, 'content': 'A computer screen with various tracks.', 'source': 'box_yolo_content_yolo'}
+icon 236: {'type': 'icon', 'bbox': [0.09561225771903992, 0.9301831126213074, 0.10865818709135056, 0.9500494599342346], 'interactivity': True, 'content': 'A triangle shape with a slight angle.', 'source': 'box_yolo_content_yolo'}
+icon 237: {'type': 'icon', 'bbox': [0.6824129223823547, 0.191507488489151, 0.743051290512085, 0.2899249792098999], 'interactivity': True, 'content': 'A black screen with various graphs and columns.', 'source': 'box_yolo_content_yolo'}
+icon 238: {'type': 'icon', 'bbox': [0.0017601505387574434, 0.9302549362182617, 0.018200621008872986, 0.951002836227417], 'interactivity': True, 'content': 'A push pin or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 239: {'type': 'icon', 'bbox': [0.886386513710022, 0.9277594089508057, 0.9034725427627563, 0.9530346393585205], 'interactivity': True, 'content': 'A symbol or logo representing a social media or social media platform.', 'source': 'box_yolo_content_yolo'}
+icon 240: {'type': 'icon', 'bbox': [0.48822513222694397, 0.6192747950553894, 0.4976266622543335, 0.6372976899147034], 'interactivity': True, 'content': 'A colorful stream or tube.', 'source': 'box_yolo_content_yolo'}
+icon 241: {'type': 'icon', 'bbox': [0.9820839166641235, 0.7985941767692566, 0.9959510564804077, 0.8186900019645691], 'interactivity': True, 'content': 'A triangle or triangle symbol.', 'source': 'box_yolo_content_yolo'}
+icon 242: {'type': 'icon', 'bbox': [0.29588454961776733, 0.006978492718189955, 0.30947741866111755, 0.0284714512526989], 'interactivity': True, 'content': 'A low angle or higher orientation.', 'source': 'box_yolo_content_yolo'}
+icon 243: {'type': 'icon', 'bbox': [0.10805265605449677, 0.9304210543632507, 0.11565767973661423, 0.9501534700393677], 'interactivity': True, 'content': 'A simple navigation tool.', 'source': 'box_yolo_content_yolo'}
+icon 244: {'type': 'icon', 'bbox': [0.00025895237922668457, 0.0006963181658647954, 0.022761784493923187, 0.03246128186583519], 'interactivity': True, 'content': 'A blue icon or icon related to running or running files.', 'source': 'box_yolo_content_yolo'}
+icon 245: {'type': 'icon', 'bbox': [0.9787961840629578, 0.7047656178474426, 0.9929398894309998, 0.7246440052986145], 'interactivity': True, 'content': 'A close or cancel button.', 'source': 'box_yolo_content_yolo'}
+icon 246: {'type': 'icon', 'bbox': [0.6894947290420532, 0.0388428196310997, 0.7064788937568665, 0.06286130845546722], 'interactivity': True, 'content': 'A hand gesture or hand gesture.', 'source': 'box_yolo_content_yolo'}
+icon 247: {'type': 'icon', 'bbox': [0.4314146041870117, 0.6379284262657166, 0.4406278729438782, 0.6555718183517456], 'interactivity': True, 'content': 'A colorful stream or tube.', 'source': 'box_yolo_content_yolo'}
+icon 248: {'type': 'icon', 'bbox': [0.44798800349235535, 0.5038915276527405, 0.45637330412864685, 0.5226508378982544], 'interactivity': True, 'content': 'A simpleistic design or logo.', 'source': 'box_yolo_content_yolo'}
+icon 249: {'type': 'icon', 'bbox': [0.47045010328292847, 0.6194573640823364, 0.4837220013141632, 0.6371440291404724], 'interactivity': True, 'content': 'A barcode scanner.', 'source': 'box_yolo_content_yolo'}
+icon 250: {'type': 'icon', 'bbox': [0.2801491618156433, 0.004784605465829372, 0.2941008508205414, 0.03016316518187523], 'interactivity': True, 'content': 'A cursor pointing to the right.', 'source': 'box_yolo_content_yolo'}
+icon 251: {'type': 'icon', 'bbox': [0.9147220849990845, 0.7063900828361511, 0.9282028079032898, 0.7248212695121765], 'interactivity': True, 'content': 'A single stick or pinning function.', 'source': 'box_yolo_content_yolo'}
+icon 252: {'type': 'icon', 'bbox': [0.9374428391456604, 0.704780101776123, 0.9513329267501831, 0.7243064641952515], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 253: {'type': 'icon', 'bbox': [0.6672549247741699, 0.03825438395142555, 0.6893517374992371, 0.06339800357818604], 'interactivity': True, 'content': 'A check mark indicating a positive or negative action.', 'source': 'box_yolo_content_yolo'}
+icon 254: {'type': 'icon', 'bbox': [0.421243280172348, 0.6379565000534058, 0.4301477372646332, 0.6552884578704834], 'interactivity': True, 'content': 'A simpleistic design or logo.', 'source': 'box_yolo_content_yolo'}
+icon 255: {'type': 'icon', 'bbox': [0.45842140913009644, 0.504295825958252, 0.4682036340236664, 0.5228497385978699], 'interactivity': True, 'content': 'A sticky note or sticky note.', 'source': 'box_yolo_content_yolo'}
+icon 256: {'type': 'icon', 'bbox': [0.5839391946792603, 0.9321361780166626, 0.594165027141571, 0.9519723057746887], 'interactivity': True, 'content': 'A pointer or pinning function.', 'source': 'box_yolo_content_yolo'}
+icon 257: {'type': 'icon', 'bbox': [0.9210155606269836, 0.00707615353167057, 0.9349613189697266, 0.027042362838983536], 'interactivity': True, 'content': 'a bar or rectangle shape.', 'source': 'box_yolo_content_yolo'}
+icon 258: {'type': 'icon', 'bbox': [0.0038532435428351164, 0.13832956552505493, 0.028329482302069664, 0.17765091359615326], 'interactivity': True, 'content': 'A search engine with the number 10.', 'source': 'box_yolo_content_yolo'}
+icon 259: {'type': 'icon', 'bbox': [0.4795442223548889, 0.006871855352073908, 0.48882582783699036, 0.026785200461745262], 'interactivity': True, 'content': 'A magnifying glass symbol.', 'source': 'box_yolo_content_yolo'}
+icon 260: {'type': 'icon', 'bbox': [0.9314202666282654, 0.5134494304656982, 0.9469797015190125, 0.5324200987815857], 'interactivity': True, 'content': 'A bookmark for reading.', 'source': 'box_yolo_content_yolo'}
+icon 261: {'type': 'icon', 'bbox': [0.9606296420097351, 0.7042950391769409, 0.975921630859375, 0.7241756916046143], 'interactivity': True, 'content': 'Refresh or restart function.', 'source': 'box_yolo_content_yolo'}
+icon 262: {'type': 'icon', 'bbox': [0.47669970989227295, 0.8928194642066956, 0.49151915311813354, 0.9140451550483704], 'interactivity': True, 'content': 'The letter "Mr" in a black background.', 'source': 'box_yolo_content_yolo'}
+icon 263: {'type': 'icon', 'bbox': [0.45618629455566406, 0.8928812742233276, 0.47207242250442505, 0.9141877293586731], 'interactivity': True, 'content': 'The logo for the website mozilla.', 'source': 'box_yolo_content_yolo'}
+icon 264: {'type': 'icon', 'bbox': [0.30836614966392517, 0.04014984890818596, 0.31866249442100525, 0.06366752833127975], 'interactivity': True, 'content': 'A close or cancel function.', 'source': 'box_yolo_content_yolo'}
+icon 265: {'type': 'icon', 'bbox': [0.7737129330635071, 0.17067383229732513, 0.7893623113632202, 0.19297073781490326], 'interactivity': True, 'content': 'A single light green dot.', 'source': 'box_yolo_content_yolo'}
+icon 266: {'type': 'icon', 'bbox': [0.9613004326820374, 0.039346739649772644, 0.9775319695472717, 0.06597788631916046], 'interactivity': True, 'content': 'A lock or padlock function.', 'source': 'box_yolo_content_yolo'}
+icon 267: {'type': 'icon', 'bbox': [1.7404556729161413e-06, 0.2774422764778137, 0.029027990996837616, 0.32276949286460876], 'interactivity': True, 'content': 'A simple window or icon.', 'source': 'box_yolo_content_yolo'}
+icon 268: {'type': 'icon', 'bbox': [0.4651407301425934, 0.4662942588329315, 0.47689056396484375, 0.48512253165245056], 'interactivity': True, 'content': 'A sticky note or marker.', 'source': 'box_yolo_content_yolo'}
+icon 269: {'type': 'icon', 'bbox': [0.00271810800768435, 0.4714619815349579, 0.026837484911084175, 0.515114963054657], 'interactivity': True, 'content': 'A simple icon or symbol.', 'source': 'box_yolo_content_yolo'}
+icon 270: {'type': 'icon', 'bbox': [0.16530293226242065, 0.5417425632476807, 0.17100059986114502, 0.5603146553039551], 'interactivity': True, 'content': 'A low pixel quality indicator.', 'source': 'box_yolo_content_yolo'}
+icon 271: {'type': 'icon', 'bbox': [0.14734429121017456, 0.9116972088813782, 0.15698060393333435, 0.9304960370063782], 'interactivity': True, 'content': 'a blank page or screen.', 'source': 'box_yolo_content_yolo'}
+icon 272: {'type': 'icon', 'bbox': [0.14451833069324493, 0.7754825949668884, 0.15987558662891388, 0.7946284413337708], 'interactivity': True, 'content': 'A simple marker or marker indicating one step or step.', 'source': 'box_yolo_content_yolo'}
+icon 273: {'type': 'icon', 'bbox': [0.14052611589431763, 0.6554522514343262, 0.1652635931968689, 0.6757925152778625], 'interactivity': True, 'content': "A simple number or symbol with the number '95' in a black background.", 'source': 'box_yolo_content_yolo'}
+icon 274: {'type': 'icon', 'bbox': [0.9328207969665527, 0.6501718759536743, 0.9481449723243713, 0.6776790618896484], 'interactivity': True, 'content': 'A simple symbol or logo.', 'source': 'box_yolo_content_yolo'}
+icon 275: {'type': 'icon', 'bbox': [0.7891916036605835, 0.34615734219551086, 0.7995815277099609, 0.36483049392700195], 'interactivity': True, 'content': 'A low pixelated image of a website.', 'source': 'box_yolo_content_yolo'}
+icon 276: {'type': 'icon', 'bbox': [0.773558497428894, 0.3974379599094391, 0.7904006242752075, 0.42319220304489136], 'interactivity': True, 'content': 'White dot in darkness.', 'source': 'box_yolo_content_yolo'}
+icon 277: {'type': 'icon', 'bbox': [0.20202216506004333, 0.07200182974338531, 0.21260014176368713, 0.09014735370874405], 'interactivity': True, 'content': 'A social media icon.', 'source': 'box_yolo_content_yolo'}
+icon 278: {'type': 'icon', 'bbox': [0.8796267509460449, 0.04316263273358345, 0.8907284736633301, 0.06318792700767517], 'interactivity': True, 'content': 'A close or cancel button.', 'source': 'box_yolo_content_yolo'}
+icon 279: {'type': 'icon', 'bbox': [0.7906814813613892, 0.41679465770721436, 0.8061696887016296, 0.439738929271698], 'interactivity': True, 'content': 'Add or save.', 'source': 'box_yolo_content_yolo'}
+icon 280: {'type': 'icon', 'bbox': [0.14086775481700897, 0.6158910989761353, 0.17318862676620483, 0.6382096409797668], 'interactivity': True, 'content': 'Number 9.', 'source': 'box_yolo_content_yolo'}
+icon 281: {'type': 'icon', 'bbox': [0.7652988433837891, 0.04169571027159691, 0.7795510292053223, 0.0632656067609787], 'interactivity': True, 'content': 'A hand or peace sign.', 'source': 'box_yolo_content_yolo'}
+icon 282: {'type': 'icon', 'bbox': [0.7768293023109436, 0.32679951190948486, 0.7885308265686035, 0.3437559902667999], 'interactivity': True, 'content': 'A single light green dot.', 'source': 'box_yolo_content_yolo'}
+icon 283: {'type': 'icon', 'bbox': [0.4578712582588196, 0.4664902091026306, 0.46517467498779297, 0.4847242534160614], 'interactivity': True, 'content': 'A simpleistic design or logo.', 'source': 'box_yolo_content_yolo'}
+icon 284: {'type': 'icon', 'bbox': [0.13965842127799988, 0.4460459053516388, 0.1753665804862976, 0.46668586134910583], 'interactivity': True, 'content': 'A simple symbol or design element.', 'source': 'box_yolo_content_yolo'}
+icon 285: {'type': 'icon', 'bbox': [0.9515156745910645, 0.6491749286651611, 0.9644081592559814, 0.6738468408584595], 'interactivity': True, 'content': 'a blurry image or trail of some sort.', 'source': 'box_yolo_content_yolo'}
+icon 286: {'type': 'icon', 'bbox': [0.14106416702270508, 0.5976665019989014, 0.17200899124145508, 0.6170487403869629], 'interactivity': True, 'content': 'A simple number or logo.', 'source': 'box_yolo_content_yolo'}
+icon 287: {'type': 'icon', 'bbox': [0.03141024708747864, 0.8880468010902405, 0.04031897708773613, 0.9071739912033081], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 288: {'type': 'icon', 'bbox': [0.45699718594551086, 0.6195194721221924, 0.4648577570915222, 0.6366697549819946], 'interactivity': True, 'content': 'A logo or logo for a website.', 'source': 'box_yolo_content_yolo'}
+icon 289: {'type': 'icon', 'bbox': [0.13697285950183868, 0.4835372865200043, 0.1747930496931076, 0.5030444264411926], 'interactivity': True, 'content': 'A simple symbol or logo representing the number 8.', 'source': 'box_yolo_content_yolo'}
+icon 290: {'type': 'icon', 'bbox': [0.0013592541217803955, 0.4240673780441284, 0.027597753331065178, 0.46446746587753296], 'interactivity': True, 'content': 'A simple note clip or note clip.', 'source': 'box_yolo_content_yolo'}
+icon 291: {'type': 'icon', 'bbox': [0.7767320275306702, 0.6533148288726807, 0.7859556078910828, 0.6732366681098938], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 292: {'type': 'icon', 'bbox': [0.3815154731273651, 0.5615107417106628, 0.39486220479011536, 0.5801538825035095], 'interactivity': True, 'content': 'A simple marker or icon indicating a tube or tube.', 'source': 'box_yolo_content_yolo'}
+icon 293: {'type': 'icon', 'bbox': [0.4337925612926483, 0.8940494060516357, 0.4544464945793152, 0.9145565629005432], 'interactivity': True, 'content': 'CUA logo.', 'source': 'box_yolo_content_yolo'}
+icon 294: {'type': 'icon', 'bbox': [0.1420237272977829, 0.5597002506256104, 0.1659318208694458, 0.57906174659729], 'interactivity': True, 'content': 'A simple symbol or logo with the number 8.', 'source': 'box_yolo_content_yolo'}
+icon 295: {'type': 'icon', 'bbox': [0.0006381034618243575, 0.3247157037258148, 0.029010403901338577, 0.3684048056602478], 'interactivity': True, 'content': 'A simple simple element or icon.', 'source': 'box_yolo_content_yolo'}
+icon 296: {'type': 'icon', 'bbox': [0.040962982922792435, 0.3346591889858246, 0.052210286259651184, 0.3550111949443817], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 297: {'type': 'icon', 'bbox': [0.13832968473434448, 0.19926530122756958, 0.17640523612499237, 0.21868936717510223], 'interactivity': True, 'content': 'Number 66.', 'source': 'box_yolo_content_yolo'}
+icon 298: {'type': 'icon', 'bbox': [0.23636189103126526, 0.6157740354537964, 0.2490014135837555, 0.6381778120994568], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 299: {'type': 'icon', 'bbox': [0.04102223739027977, 0.4014805853366852, 0.0511743389070034, 0.42069852352142334], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 300: {'type': 'icon', 'bbox': [0.9944024682044983, 0.9529666304588318, 1.0, 0.9906619191169739], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 301: {'type': 'icon', 'bbox': [0.14823012053966522, 0.7954795360565186, 0.1572137326002121, 0.8113126754760742], 'interactivity': True, 'content': 'A simple swiping tool.', 'source': 'box_yolo_content_yolo'}
+icon 302: {'type': 'icon', 'bbox': [0.1387367695569992, 0.5020544528961182, 0.1743226945400238, 0.5232505202293396], 'interactivity': True, 'content': 'A simple symbol or design element, specifically the number 5.', 'source': 'box_yolo_content_yolo'}
+icon 303: {'type': 'icon', 'bbox': [0.13851338624954224, 0.4267388880252838, 0.17560769617557526, 0.44725584983825684], 'interactivity': True, 'content': 'A simple symbol or design element.', 'source': 'box_yolo_content_yolo'}
+icon 304: {'type': 'icon', 'bbox': [0.14040227234363556, 0.5216298699378967, 0.17276807129383087, 0.5421326160430908], 'interactivity': True, 'content': 'A simple number or symbol with the number 66.', 'source': 'box_yolo_content_yolo'}
+icon 305: {'type': 'icon', 'bbox': [0.042099881917238235, 0.7114776372909546, 0.049903132021427155, 0.7250391840934753], 'interactivity': True, 'content': 'A thumbs up or thumbs down symbol.', 'source': 'box_yolo_content_yolo'}
+icon 306: {'type': 'icon', 'bbox': [0.04018275812268257, 0.7966302037239075, 0.051313616335392, 0.8159435391426086], 'interactivity': True, 'content': 'A social media icon.', 'source': 'box_yolo_content_yolo'}
+icon 307: {'type': 'icon', 'bbox': [0.9920316338539124, 0.6215378046035767, 1.0, 0.6575591564178467], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 308: {'type': 'icon', 'bbox': [5.47200434084516e-05, 0.2312421351671219, 0.029379257932305336, 0.2721107304096222], 'interactivity': True, 'content': 'A low or fast motion indicator.', 'source': 'box_yolo_content_yolo'}
+icon 309: {'type': 'icon', 'bbox': [0.9757701754570007, 0.004358296282589436, 0.9968910217285156, 0.03230110928416252], 'interactivity': True, 'content': 'a close or cancel button.', 'source': 'box_yolo_content_yolo'}
+icon 310: {'type': 'icon', 'bbox': [1.8330663806409575e-05, 0.9556596279144287, 0.005519882310181856, 0.9989268183708191], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 311: {'type': 'icon', 'bbox': [0.16558973491191864, 0.5796301364898682, 0.17247198522090912, 0.5983828902244568], 'interactivity': True, 'content': 'A simple step or guide guide.', 'source': 'box_yolo_content_yolo'}
+icon 312: {'type': 'icon', 'bbox': [0.13776534795761108, 0.18030039966106415, 0.17597423493862152, 0.1993311643600464], 'interactivity': True, 'content': 'A simple number or symbol with the number 6.', 'source': 'box_yolo_content_yolo'}
+icon 313: {'type': 'icon', 'bbox': [0.9778478145599365, 0.038858648389577866, 0.9928231835365295, 0.0667455717921257], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 314: {'type': 'icon', 'bbox': [0.7523768544197083, 0.18649712204933167, 0.7640109062194824, 0.19920970499515533], 'interactivity': True, 'content': 'loading bar', 'source': 'box_yolo_content_yolo'}
+icon 315: {'type': 'icon', 'bbox': [0.1409541666507721, 0.6372734904289246, 0.17250938713550568, 0.6556997299194336], 'interactivity': True, 'content': 'A simple number or symbol.', 'source': 'box_yolo_content_yolo'}
+icon 316: {'type': 'icon', 'bbox': [0.7911406755447388, 0.285247266292572, 0.8054049611091614, 0.3069557845592499], 'interactivity': True, 'content': 'A simple design or logo related to design or design.', 'source': 'box_yolo_content_yolo'}
+icon 317: {'type': 'icon', 'bbox': [0.00017667413339950144, 0.1862953156232834, 0.027262644842267036, 0.22483523190021515], 'interactivity': True, 'content': 'A simple mopping tool.', 'source': 'box_yolo_content_yolo'}
+icon 318: {'type': 'icon', 'bbox': [0.040636319667100906, 0.291049987077713, 0.05186198279261589, 0.3109053373336792], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 319: {'type': 'icon', 'bbox': [0.04002399370074272, 0.4231521487236023, 0.05148901790380478, 0.44249284267425537], 'interactivity': True, 'content': 'A simple icon or profile indicator.', 'source': 'box_yolo_content_yolo'}
+icon 320: {'type': 'icon', 'bbox': [0.776582658290863, 0.24907644093036652, 0.787956178188324, 0.2640693783760071], 'interactivity': True, 'content': 'White circle in darkness.', 'source': 'box_yolo_content_yolo'}
+icon 321: {'type': 'icon', 'bbox': [0.03649500012397766, 0.22552673518657684, 0.04775464907288551, 0.24448810517787933], 'interactivity': True, 'content': 'A tick or tick mark.', 'source': 'box_yolo_content_yolo'}
+icon 322: {'type': 'icon', 'bbox': [0.040936026722192764, 0.24750076234340668, 0.05141153186559677, 0.26706817746162415], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 323: {'type': 'icon', 'bbox': [0.04069269075989723, 0.3132646381855011, 0.05186215043067932, 0.33266711235046387], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 324: {'type': 'icon', 'bbox': [0.04134998843073845, 0.6891816258430481, 0.05026540160179138, 0.7051609754562378], 'interactivity': True, 'content': 'A social media icon or profile.', 'source': 'box_yolo_content_yolo'}
+icon 325: {'type': 'icon', 'bbox': [0.04145314171910286, 0.3793322443962097, 0.05136425048112869, 0.397895485162735], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 326: {'type': 'icon', 'bbox': [0.2920309007167816, 0.8806523084640503, 0.30102890729904175, 0.8984852433204651], 'interactivity': True, 'content': 'A website URL or website URL.', 'source': 'box_yolo_content_yolo'}
+icon 327: {'type': 'icon', 'bbox': [0.04151579737663269, 0.35767242312431335, 0.051877621561288834, 0.3761572241783142], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 328: {'type': 'icon', 'bbox': [0.1645665168762207, 0.6549965739250183, 0.17147983610630035, 0.6755803823471069], 'interactivity': True, 'content': 'A battery charge indicator.', 'source': 'box_yolo_content_yolo'}
+icon 329: {'type': 'icon', 'bbox': [0.8070294857025146, 0.5562032461166382, 0.8164357542991638, 0.5728214383125305], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 330: {'type': 'icon', 'bbox': [0.04098360612988472, 0.6657787561416626, 0.05051454156637192, 0.6841310858726501], 'interactivity': True, 'content': 'A social media icon.', 'source': 'box_yolo_content_yolo'}
+icon 331: {'type': 'icon', 'bbox': [0.1398022174835205, 0.14259687066078186, 0.17401982843875885, 0.16173911094665527], 'interactivity': True, 'content': 'A number or number that is not selected or selected.', 'source': 'box_yolo_content_yolo'}
+icon 332: {'type': 'icon', 'bbox': [0.031677477061748505, 0.9108277559280396, 0.04174496605992317, 0.9274336099624634], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 333: {'type': 'icon', 'bbox': [0.991237998008728, 0.10818208009004593, 1.0, 0.12332390993833542], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 334: {'type': 'icon', 'bbox': [0.7809394598007202, 0.8888413310050964, 0.8111989498138428, 0.914914608001709], 'interactivity': True, 'content': 'Faster', 'source': 'box_yolo_content_yolo'}
+icon 335: {'type': 'icon', 'bbox': [0.33096131682395935, 0.5992138385772705, 0.3429203927516937, 0.616631269454956], 'interactivity': True, 'content': 'a horizontal bar with a slight angle.', 'source': 'box_yolo_content_yolo'}
+icon 336: {'type': 'icon', 'bbox': [0.040978170931339264, 0.26940494775772095, 0.05196913331747055, 0.2883078455924988], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 337: {'type': 'icon', 'bbox': [0.040708743035793304, 0.13768133521080017, 0.05151624605059624, 0.15683305263519287], 'interactivity': True, 'content': 'A cursor or pointer pointer.', 'source': 'box_yolo_content_yolo'}
+icon 338: {'type': 'icon', 'bbox': [0.441558837890625, 0.6370568871498108, 0.4477657377719879, 0.6560618281364441], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 339: {'type': 'icon', 'bbox': [0.1384900063276291, 0.4083610475063324, 0.17551858723163605, 0.4275839328765869], 'interactivity': True, 'content': 'A symbol or logo representing the number 8.', 'source': 'box_yolo_content_yolo'}
+icon 340: {'type': 'icon', 'bbox': [0.46756210923194885, 0.6361633539199829, 0.48289915919303894, 0.6615012884140015], 'interactivity': True, 'content': 'unanswerable', 'source': 'box_yolo_content_yolo'}
+icon 341: {'type': 'icon', 'bbox': [0.14010486006736755, 0.31272464990615845, 0.17591498792171478, 0.3321627974510193], 'interactivity': True, 'content': 'A simple math problem or design tool.', 'source': 'box_yolo_content_yolo'}
+icon 342: {'type': 'icon', 'bbox': [0.035945624113082886, 0.2039049118757248, 0.047517985105514526, 0.22343707084655762], 'interactivity': True, 'content': 'A low angle or profile indicator.', 'source': 'box_yolo_content_yolo'}

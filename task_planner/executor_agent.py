@@ -30,10 +30,11 @@ class ExecutorAgent:
             return self.current_plan['steps'][self.current_step_idx]
         return None
 
-    def handle_feedback(self, feedback_type: str, user_input: str = ""):
+    def handle_feedback(self, feedback_type: str, user_input: str = "", save_highlight: bool = False):
         """
         处理用户反馈
         feedback_type: "next" | "error" | "question" | "challenge" | "highlight"
+        save_highlight: 是否保存高亮信息到文件（仅对highlight有效）
         """
         current_step = self.get_current_step()
         if not current_step:
@@ -48,7 +49,7 @@ class ExecutorAgent:
         elif feedback_type == "challenge":
             return self._handle_challenge(current_step, user_input)
         elif feedback_type == "highlight":
-            return self._handle_highlight(current_step)
+            return self._handle_highlight(current_step, save_highlight)
 
     def _handle_next(self, current_step):
         """处理下一步"""
@@ -167,7 +168,11 @@ class ExecutorAgent:
         if not result['is_correct']:
             # 重新规划
             screen_info = self._get_screen_info()
-            rag_docs = self.knowledge_base.search(self.user_goal, top_k=3)
+            try:
+                rag_docs = self.knowledge_base.search(self.user_goal, top_k=3)
+            except Exception as e:
+                print(f"知识库访问失败: {e}")
+                rag_docs = []
             new_plan = self.planner.plan(self.user_goal, screen_info, rag_docs)
             self.current_plan = new_plan
             self.current_step_idx = 0
@@ -175,29 +180,29 @@ class ExecutorAgent:
         else:
             return {"status": "confirmed", "explanation": result['explanation']}
 
-    def _handle_highlight(self, current_step):
+    def _handle_highlight(self, current_step, save_to_file=False):
         """处理高亮请求"""
         # 获取屏幕分析（功能定位+大模型）
         screen_info = self.screen_analyzer.analyze("both")
 
-        prompt = f"""分析这一步应该在屏幕的哪个位置操作。
+        prompt = f"""分析这一步应该在屏幕的哪个位置操作。从 parsed_content_list 中选择最匹配的图标ID。
 
 当前步骤：
 {json.dumps(current_step, ensure_ascii=False, indent=2)}
 
-屏幕分析：
-{json.dumps(screen_info, ensure_ascii=False, indent=2)}
+屏幕解析结果：
+{screen_info.get('parser_output', '')}
 
-输出JSON：
+输出JSON（只返回图标ID）：
 {{
-  "coordinates": {{"x": 100, "y": 200, "width": 50, "height": 30}},
+  "icon_id": 0,
   "description": "操作区域描述"
 }}"""
 
         response = self.client.chat.completions.create(
             model=DEEPSEEK_MODEL,
             messages=[
-                {"role": "system", "content": "你是屏幕定位助手，分析操作位置。输出纯JSON。"},
+                {"role": "system", "content": "你是屏幕定位助手，从解析结果中选择最匹配的图标ID。输出纯JSON。"},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.3
@@ -212,12 +217,31 @@ class ExecutorAgent:
 
         result = json.loads(content)
 
-        # 调用高亮工具
-        if result.get('coordinates'):
-            self._highlight_area(result['coordinates'])
-            return {"status": "highlighted", "coordinates": result['coordinates'], "description": result.get('description', '')}
-        else:
-            return {"status": "error", "message": "无法定位操作区域"}
+        # 从 parsed_content_list 获取坐标
+        if result.get('icon_id') is not None and 'parsed_content_list' in screen_info:
+            icon_id = result['icon_id']
+            parsed_list = screen_info['parsed_content_list']
+            if 0 <= icon_id < len(parsed_list):
+                coordinates = parsed_list[icon_id].get('bbox')
+                if coordinates:
+                    # 保存到文件
+                    if save_to_file:
+                        from datetime import datetime
+                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                        filename = f"highlight_{timestamp}.txt"
+                        with open(filename, 'w', encoding='utf-8') as f:
+                            f.write(f"=== 高亮信息 ===\n\n")
+                            f.write(f"当前步骤：\n{json.dumps(current_step, ensure_ascii=False, indent=2)}\n\n")
+                            f.write(f"选择的图标ID：{icon_id}\n\n")
+                            f.write(f"图标信息：\n{json.dumps(parsed_list[icon_id], ensure_ascii=False, indent=2)}\n\n")
+                            f.write(f"坐标（bbox）：{coordinates}\n\n")
+                            f.write(f"描述：{result.get('description', '')}\n\n")
+                            f.write(f"完整解析结果：\n{screen_info.get('parser_output', '')}\n")
+
+                    self._highlight_area(coordinates)
+                    return {"status": "highlighted", "coordinates": coordinates, "description": result.get('description', '')}
+
+        return {"status": "error", "message": "无法定位操作区域"}
 
     def _should_continue_planning(self):
         """判断是否需要继续规划"""
@@ -262,7 +286,7 @@ class ExecutorAgent:
 
     def _get_screen_info(self):
         """获取当前屏幕信息"""
-        return self.screen_analyzer.analyze("both")
+        return self.screen_analyzer.analyze("llm")
 
     def _format_memory(self):
         """格式化记忆"""
@@ -274,52 +298,39 @@ class ExecutorAgent:
 
     def _highlight_area(self, coordinates):
         """在屏幕上高亮区域"""
-        import pyautogui
-        from PIL import Image, ImageDraw, ImageTk
         import tkinter as tk
+        import pyautogui
 
-        # 截图
-        screenshot = pyautogui.screenshot()
-        screen_w, screen_h = screenshot.size
+        # 获取屏幕尺寸
+        screen_w, screen_h = pyautogui.size()
 
         # 解析坐标（支持多种格式）
         if isinstance(coordinates, dict):
             if 'x' in coordinates:
-                # 格式: {'x': ..., 'y': ..., 'width': ..., 'height': ...}
-                x, y, w, h = coordinates['x'], coordinates['y'], coordinates['width'], coordinates['height']
+                x1, y1 = coordinates['x'], coordinates['y']
+                x2, y2 = x1 + coordinates['width'], y1 + coordinates['height']
             elif 'bbox' in coordinates:
-                # 格式: {'bbox': [x1, y1, x2, y2]}
                 bbox = coordinates['bbox']
-                x, y = int(bbox[0] * screen_w), int(bbox[1] * screen_h)
-                w, h = int((bbox[2] - bbox[0]) * screen_w), int((bbox[3] - bbox[1]) * screen_h)
+                x1, y1 = int(bbox[0] * screen_w), int(bbox[1] * screen_h)
+                x2, y2 = int(bbox[2] * screen_w), int(bbox[3] * screen_h)
         elif isinstance(coordinates, list) and len(coordinates) == 4:
-            # 格式: [x1, y1, x2, y2] (ratio)
-            x, y = int(coordinates[0] * screen_w), int(coordinates[1] * screen_h)
-            w, h = int((coordinates[2] - coordinates[0]) * screen_w), int((coordinates[3] - coordinates[1]) * screen_h)
-        draw = ImageDraw.Draw(screenshot)
+            x1, y1 = int(coordinates[0] * screen_w), int(coordinates[1] * screen_h)
+            x2, y2 = int(coordinates[2] * screen_w), int(coordinates[3] * screen_h)
 
-        # 绘制粗红框
-        for i in range(8):
-            draw.rectangle([x-i, y-i, x+w+i, y+h+i], outline="red")
-
-        # 创建窗口
+        # 创建透明窗口
         root = tk.Tk()
-        root.title("高亮区域")
+        root.attributes('-fullscreen', True)
         root.attributes('-topmost', True)
+        root.attributes('-alpha', 0.3)
+        root.configure(bg='black')
 
-        # 全屏显示
-        screen_width = root.winfo_screenwidth()
-        screen_height = root.winfo_screenheight()
-        root.geometry(f"{screen_width}x{screen_height}+0+0")
+        # 创建画布
+        canvas = tk.Canvas(root, bg='black', highlightthickness=0)
+        canvas.pack(fill='both', expand=True)
 
-        # 显示图片
-        photo = ImageTk.PhotoImage(screenshot)
-        label = tk.Label(root, image=photo)
-        label.pack()
+        # 绘制红框
+        canvas.create_rectangle(x1, y1, x2, y2, outline='red', width=5)
 
-        # 10秒后关闭
-        root.after(10000, root.destroy)
-
-        print("高亮区域已显示，10秒后自动关闭（或点击窗口关闭）")
-        label.bind('<Button-1>', lambda _: root.destroy())
+        # 3秒后关闭
+        root.after(3000, root.destroy)
         root.mainloop()

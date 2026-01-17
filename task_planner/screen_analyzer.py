@@ -45,8 +45,9 @@ class ScreenAnalyzer:
 
         # 功能定位
         if mode in ["parser", "both"]:
-            parsed_text = self._parse_screenshot(screenshot)
+            parsed_text, parsed_content_list = self._parse_screenshot(screenshot)
             result['parser_output'] = parsed_text
+            result['parsed_content_list'] = parsed_content_list
 
         # 大模型分析
         if mode in ["llm", "both"]:
@@ -92,4 +93,4 @@ class ScreenAnalyzer:
         )
 
         parsed_text = '\n'.join([f'icon {i}: {str(v)}' for i, v in enumerate(parsed_content_list)])
-        return parsed_text
+        return parsed_text, parsed_content_list

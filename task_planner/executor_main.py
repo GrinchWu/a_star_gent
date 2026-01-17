@@ -7,7 +7,6 @@ from task_planner.config import OMNIPARSER_DIR
 from task_planner.executor_agent import ExecutorAgent
 from task_planner.planner_agent import TaskPlannerAgent
 from task_planner.screen_analyzer import ScreenAnalyzer
-from knowledge.vector_store import VectorStore
 
 def main():
     print("=== 任务执行系统 ===\n")
@@ -16,11 +15,10 @@ def main():
     executor = ExecutorAgent(OMNIPARSER_DIR)
     planner = TaskPlannerAgent()
     screen_analyzer = ScreenAnalyzer(OMNIPARSER_DIR)
-    knowledge_base = VectorStore()
 
     # 2. 推荐功能
     print("正在分析应用功能...")
-    app_docs = knowledge_base.search("应用功能介绍", top_k=5)
+    app_docs = executor.knowledge_base.search("应用功能介绍", top_k=5)
     suggestions = planner.suggest_tasks(app_docs)
 
     print("\n我可以带你实现以下功能：")
@@ -30,7 +28,7 @@ def main():
     # 3. 生成初始计划
     print("\n分析中...")
     screen_info = screen_analyzer.analyze("llm")
-    rag_docs = knowledge_base.search(user_goal, top_k=3)
+    rag_docs = executor.knowledge_base.search(user_goal, top_k=3)
 
     print("生成计划...")
     plan = planner.plan(user_goal, screen_info, rag_docs)
@@ -84,10 +82,14 @@ def main():
             else:
                 print(f"\n步骤正确：{result['explanation']}")
         elif choice == "5":
-            result = executor.handle_feedback("highlight")
+            save_choice = input("是否保存高亮信息到文件？(y/n)：").strip().lower()
+            save_to_file = save_choice == 'y'
+            result = executor.handle_feedback("highlight", save_highlight=save_to_file)
             if result['status'] == 'highlighted':
                 print(f"\n已高亮：{result.get('description', '')}")
                 print(f"坐标：{result['coordinates']}")
+                if save_to_file:
+                    print("高亮信息已保存到文件")
             else:
                 print(f"\n错误：{result.get('message', '无法定位操作区域')}")
 
