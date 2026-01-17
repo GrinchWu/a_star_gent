@@ -173,7 +173,14 @@ class ExecutorAgent:
             except Exception as e:
                 print(f"知识库访问失败: {e}")
                 rag_docs = []
-            new_plan = self.planner.plan(self.user_goal, screen_info, rag_docs)
+
+            # 构建包含执行历史的上下文
+            context_with_history = {
+                **screen_info,
+                'executed_steps': self.memory
+            }
+
+            new_plan = self.planner.plan_from_current_state(self.user_goal, context_with_history, rag_docs)
             self.current_plan = new_plan
             self.current_step_idx = 0
             return {"status": "replanned", "explanation": result['explanation'], "new_plan": new_plan}

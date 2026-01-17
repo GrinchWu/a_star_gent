@@ -7,6 +7,7 @@ from task_planner.config import OMNIPARSER_DIR
 from task_planner.executor_agent import ExecutorAgent
 from task_planner.planner_agent import TaskPlannerAgent
 from task_planner.screen_analyzer import ScreenAnalyzer
+from task_planner.agent_recommender import AgentRecommender
 
 def main():
     print("=== 任务执行系统 ===\n")
@@ -15,6 +16,33 @@ def main():
     executor = ExecutorAgent(OMNIPARSER_DIR)
     planner = TaskPlannerAgent()
     screen_analyzer = ScreenAnalyzer(OMNIPARSER_DIR)
+    agent_recommender = AgentRecommender(executor.knowledge_base)
+
+    # 1.5. LLM Agent推荐
+    print("=== AI Agent 智能推荐 ===\n")
+    user_identity = input("请告诉我您的身份（例如：学生、律师、金融从业者等）：")
+    user_task = input("请描述您想完成的任务：")
+
+    print("\n正在为您分析和推荐合适的AI Agent...\n")
+    recommendation = agent_recommender.recommend(user_identity, user_task)
+    print(recommendation)
+
+    # 多轮对话支持
+    conversation_history = [
+        {"role": "user", "content": f"用户身份：{user_identity}\n用户任务：{user_task}"},
+        {"role": "assistant", "content": recommendation}
+    ]
+
+    while True:
+        follow_up = input("\n您还有其他问题吗？(输入问题或按回车继续)：").strip()
+        if not follow_up:
+            break
+        response = agent_recommender.chat(follow_up, conversation_history)
+        print(f"\n{response}")
+        conversation_history.append({"role": "user", "content": follow_up})
+        conversation_history.append({"role": "assistant", "content": response})
+
+    print("\n" + "="*50 + "\n")
 
     # 2. 推荐功能
     print("正在分析应用功能...")

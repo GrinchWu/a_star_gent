@@ -98,6 +98,72 @@ class TaskPlannerAgent:
             print(f"JSON解析失败，原始内容：\n{content}\n")
             raise
 
+    def plan_from_current_state(self, user_goal: str, screen_info: dict, rag_docs: list) -> dict:
+        """
+        从当前状态继续规划（考虑已执行步骤）
+        user_goal: 用户目标
+        screen_info: 屏幕分析信息（包含executed_steps）
+        rag_docs: RAG检索到的文档列表
+        """
+        context = self._build_context(screen_info)
+        executed_steps = screen_info.get('executed_steps', [])
+
+        prompt = f"""你是任务规划助手。用户目标：{user_goal}
+
+当前屏幕状态：
+{context}
+
+已执行的步骤（禁止重复）：
+{json.dumps(executed_steps, ensure_ascii=False, indent=2)}
+
+目标应用文档：
+{self._format_docs(rag_docs)}
+
+**关键要求**：
+1. 根据当前屏幕状态，识别用户当前处于什么位置
+2. **禁止规划任何已执行过的步骤**
+3. 从当前状态继续规划，只规划接下来需要执行的步骤
+4. 如果用户已经在目标应用中，直接规划功能操作步骤
+5. 每步是原子操作，包含预期结果
+6. **只规划到置信度>0.8的步骤**
+
+输出JSON：
+{{
+  "current_app": "当前所在应用",
+  "target_app": "目标应用名称",
+  "steps": [
+    {{"step": 1, "action": "操作", "target": "对象", "detail": "说明", "expected_result": "预期结果", "confidence": 0.95}},
+    ...
+  ],
+  "need_feedback": true/false,
+  "next_info_needed": "需要什么信息继续规划"
+}}"""
+
+        response = self.client.chat.completions.create(
+            model=DEEPSEEK_MODEL,
+            messages=[
+                {"role": "system", "content": "你是专业任务规划助手，从当前状态继续规划，禁止重复已执行步骤。输出必须是纯JSON格式。"},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.3
+        )
+
+        import json
+        content = response.choices[0].message.content.strip()
+
+        # 提取JSON（如果被markdown包裹）
+        if content.startswith("```"):
+            content = content.split("```")[1]
+            if content.startswith("json"):
+                content = content[4:]
+            content = content.strip()
+
+        try:
+            return json.loads(content)
+        except json.JSONDecodeError:
+            print(f"JSON解析失败，原始内容：\n{content}\n")
+            raise
+
     def _build_context(self, screen_info: dict) -> str:
         """构建屏幕上下文"""
         parts = []
